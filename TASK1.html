@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+          body{
+    margin:0;
+    
+}
+
+
+.navigation-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    row-gap:40px;
+    column-gap:40px;
+    font-family: arial,sans-serif;
+    height:70px;
+    color:rgb(51, 51, 51);
+    font-size: 18px;
+    background-color: transparent;
+    position: fixed;
+    width:100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;    
+}
+
+
+.navigation-menu.scrolled a {
+      color: black;
+    }
+
+
+
+.heading{
+    font-size:48px;
+    font-family: arial;
+    font-weight: 700;
+    margin-bottom:20px;
+    margin-top:160px;
+    margin-left:60px;
+
+}
+.aboutit{
+    font-size:18px;
+    max-width: 600px;
+    font-family:arial;
+    line-height: 28.8px;
+    margin-left:60px;
+}
+
+.descriptions {
+  display: grid;
+  grid-template-rows: repeat(4, 100vh); /* each section fills the screen */
+  /* to push content below the fixed nav */
+}
+   
+    
+
+.homesection {
+  background-color:bisque;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutsection {
+  background-color:cadetblue;
+  background-size: cover;
+  background-position: center;
+}
+
+.servicesection {
+  background-color:greenyellow;
+  background-size: cover;
+  background-position: center;
+}
+
+.contactsection {
+  background-color:lightskyblue;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navhome{
+    text-decoration: none;
+    color:gray;
+    padding:5px 15px 5px 15px;
+    transition: all 0.4s ease-in-out;
+    border-radius:15px;
+    box-shadow: 0 0 15px #ff69b4;
+}
+.navabout{
+    text-decoration: none;
+    color:gray;
+    padding:5px 15px 5px 15px;
+    padding:5px 15px 5px 15px;
+    transition: all 0.4s ease-in-out;
+    border-radius:15px;
+    box-shadow: 0 0 15px aqua;
+}
+.navservices{
+    text-decoration: none;
+    color:gray;
+    padding:5px 15px 5px 15px;
+    transition: all 0.4s ease-in-out;
+    border-radius:15px;
+        box-shadow: 0 0 15px #f55d49;
+
+}
+.navcontact{
+    text-decoration: none;
+    color:gray;
+    padding:5px 15px 5px 15px;
+    transition: all 0.4s ease-in-out;
+    border-radius:15px;
+        box-shadow: 0 0 15px rgb(19, 212, 23);
+
+}
+
+.navhome:hover{
+    box-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ff69b4,
+    0 0 60px #ff69b4;
+    color:black;
+    transform: scale(1.1);
+    
+}
+.navabout:hover{
+    box-shadow:
+    0 0 10px aqua,
+    0 0 20px aqua,
+    0 0 40px aqua,
+    0 0 60px aqua;
+    color:black;
+    transform: scale(1.1);
+}
+.navservices:hover{
+    box-shadow:
+    0 0 10px #f55d49,
+    0 0 20px #f55d49,
+    0 0 40px #f55d49,
+    0 0 60px #f55d49;
+    color:black;
+    transform: scale(1.1);
+}
+.navcontact:hover{
+    box-shadow:
+    0 0 10px aquamarine,
+    0 0 20px aquamarine,
+    0 0 40px aquamarine,
+    0 0 60px aquamarine;
+    color:black;
+    transform: scale(1.1);
+    
+}
+.navhome:active{
+    box-shadow: none;
+    text-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ff69b4,
+    0 0 60px #ff69b4;
+    color:black;
+    transform: scale(1.1);
+    
+}
+.navabout:active{
+    box-shadow: none;
+    text-shadow:
+    0 0 10px aqua,
+    0 0 20px aqua,
+    0 0 40px aqua,
+    0 0 60px aqua;
+    color:black;
+    transform: scale(1.1);
+}
+.navservices:active{
+    box-shadow: none;
+    text-shadow:
+    0 0 10px #f55d49,
+    0 0 20px #f55d49,
+    0 0 40px #f55d49,
+    0 0 60px #f55d49;
+    color:black;
+    transform: scale(1.1);
+}
+.navcontact:active{
+    box-shadow: none;
+    text-shadow:
+    0 0 10px aquamarine,
+    0 0 20px aquamarine,
+    0 0 40px aquamarine,
+    0 0 60px aquamarine;
+    color:black;
+    transform: scale(1.1);
+    
+}
+.navigation-menu.scrolled {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.163);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.163);
+}
+
+
+</style>
+<title>interactive webpage</title>
+    </head>
+<body>
+  <nav class="navigation-menu" id="navbar">
+  <a href="#homesection" class="navhome">Home</a>
+  <a href="#aboutsection" class="navabout">About</a>
+  <a href="#servicesection" class="navservices">services</a>
+  <a href="#contactsection" class="navcontact">Contact</a>
+</nav>
+
+        <div class="descriptions">
+            <div class="homesection" id="homesection">
+                <p class="heading">Home Section</p>
+                <p class="aboutit">Welcome to the homepage. Scroll down to see the navigation bar change color.</p>
+
+            </div>
+            <div class="aboutsection" id="aboutsection">
+                <p class="heading">About Us</p>
+                <p class="aboutit"> We are passionate about building beautiful and responsive websites.</p>
+
+            </div>
+            <div class="servicesection" id="servicesection">
+                <p class="heading">Our Services</p>
+                <p class="aboutit">We offer web design, development, SEO, and more.</p>
+
+            </div>
+            <div class="contactsection" id="contactsection">
+                <p class="heading">Contact Us</p>
+                <p class="aboutit">Feel free to reach out through our social media or contact form.</p>
+            </div>
+        </div>
+
+        <script>
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+    </body>
+</html>
